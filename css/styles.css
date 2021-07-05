@@ -1,25 +1,77 @@
 html,
 body {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    font-family:'Roboto Mono',monospace;
+    line-height: 1.65;
+    letter-spacing: 0.5px; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 610px) {
+    body {
+        line-height: 1.6;
+        font-size: 12px;
+    }
 }
 
 .site {
-    width: 570px;
-    max-width: 88%;
-    word-wrap: break-word;
+    width: 600px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.4;
     margin-top: 5vh;
+    color: #2e2e2e;
 }
 
-.site-header {
-    color: #aa2d1d;
-    margin-top: 18px;
-    font-family:'Roboto Mono',monospace;
-    margin-bottom: 20px;
-    font-weight: bold;
+.right{
+    float:right;
+}
+
+.left {
+    font-weight: 999;
+    color: #7d2418;
+    float: left;
+}
+
+.left-link {
+    float: left;
+}
+
+.title {
+    font-weight: 999;
+    color: #7d2418;
+}
+
+h2  {
+    color: #7d2418;
+}
+
+h3 {
+    padding-top: 8px;
+    color: #7d2418;
+
+}
+
+
+img {
+    width: 100%;
+}
+
+.album {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date {
+    margin-top: -10px;
+    font-style: italic;
+    color: rgb(46, 46, 46);
+}
+
+.year {
+    font-weight: 999;
+    margin-bottom: -15px;
 }
 
 a {
@@ -35,6 +87,92 @@ a:visited {
     color: #6767d8 !important;
 }
 
-p {
-    color: #252525;
+.updated {
+    text-align: right;
+    color: #646464;
+}
+
+pre code {
+    border: 1px solid #c9cbd3;
+    display: block;
+    padding: 12px;
+}
+
+code {
+    font-size: 12px;
+    background-color: #f0f2fa;
+    display: inline-block;  
+}
+
+ul{
+    margin-left:-12px;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.001s;
+}
+
+.accordion:hover {
+    background-color: #cfcfcf;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 12px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+} 
+
+.panel-open {
+    padding: 0 12px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.accordion-open {
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+}
+
+.accordion-open:hover {
+    background-color: #cfcfcf;
+}
+
+.accordion-open:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    font-size: 13px;
+    float: right;
+}
+
+.active:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
 }
